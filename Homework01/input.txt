@@ -1,0 +1,17 @@
+public class Main2 {
+	
+	
+	/**
+	 * 这里是注释
+	 */
+	public static void main(String[] args) {
+		Object[] obj=new Object[2];
+		obj[0]=(int)1.5;
+		obj=2/1;
+		//注释
+		aa++;
+		if(a!=b)
+		System.out.println("woshi zifuchuan");
+		System.out.println(obj[1]);
+	}
+}
