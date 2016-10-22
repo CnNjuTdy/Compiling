@@ -15,7 +15,11 @@ public class Analyze {
     static enum TOKEN{
         KEYWORDS,//关键字
         IDENTIFIER,//标识符
-        OPERATOR,DELIMITER,INT,DOUBLE,ANNOTATION
+        OPERATOR,//操作符
+        DELIMITER,//分隔符
+        INT,//整数
+        DOUBLE,//浮点数
+        ANNOTATION//注释符
     }
     static HashMap<TOKEN,String> map=new HashMap<TOKEN,String>();
 
