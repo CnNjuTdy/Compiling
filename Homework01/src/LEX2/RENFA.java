@@ -119,10 +119,11 @@ public class RENFA {
 
     public static void main(String[] args) {
         RENFA renfa = new RENFA();
-//        System.out.println(renfa.analyze("(a|b)*").toString());
-        NFADFA nfadfa  = new NFADFA(renfa.analyze("(a|b)*"));
+//        System.out.println(renfa.analyze("(a|b)*abb").toString());
+        NFADFA nfadfa  = new NFADFA(renfa.analyze("(a|b)*abb"));
         List<Integer> list = nfadfa.epsilonClosure(6);
-        for (int i:list){
+        List<Integer> list2 = nfadfa.move(list,'a');
+        for (int i:list2){
             System.out.print(i);
         }
     }
