@@ -4,7 +4,6 @@ public class Edge {
     private Node begin;
     private Node end;
     private String label;
-    private Edge edge;
 
     public Edge() {
         super();
@@ -32,11 +31,13 @@ public class Edge {
     }
 
     public Edge getEdge() {
-        return edge;
+        return this;
     }
 
     public void setEdge(Edge edge) {
-        this.edge = edge;
+        this.begin = edge.getBegin();
+        this.end = edge.getEnd();
+        this.label = edge.getLabel();
     }
 
     public Node getBegin() {
